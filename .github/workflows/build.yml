@@ -17,10 +17,10 @@ jobs:\
 \
       - name: Install MinGW\
         run: |\
-          sudo apt-get update\
-          sudo apt-get install -y gcc-mingw-w64-i686 g++-mingw-w64-i686 mingw-w64-tools\
+          sudo apt update\
+          sudo apt install -y gcc-mingw-w64-i686 g++-mingw-w64-i686\
 \
-      - name: Build Resource and Executable\
+      - name: Build Executable\
         run: |\
           i686-w64-mingw32-windres resource.rc -o resource.o\
           i686-w64-mingw32-g++ main.cpp resource.o -o RaiseABenny.exe -mwindows -lole32 -loleaut32 -lshlwapi -static-libgcc -static-libstdc++\
