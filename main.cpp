@@ -1,4 +1,4 @@
-\f0\fs24 \cf0 #include <windows.h>\
+#include <windows.h>\
 #include <exdisp.h>\
 #include <olectl.h>\
 #include <shlwapi.h>\
